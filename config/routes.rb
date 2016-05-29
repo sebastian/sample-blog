@@ -1,4 +1,22 @@
 Rails.application.routes.draw do
+  # You want to add a root clause to your page,
+  # something like:
+  #
+  #   root 'blog#index'
+
+  # To get the admin area (posts controller) under
+  # /admin, you need to use a namespace, for example:
+  #
+  #   namespace :admin do
+  #     # Directs /admin/posts/* to Admin::PostsController
+  #     # (app/controllers/admin/posts_controller.rb)
+  #     resources :posts
+  #   end
+
+  #########################################################################
+  # Original routes file below. You can look for ideas there if you need
+  #########################################################################
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
