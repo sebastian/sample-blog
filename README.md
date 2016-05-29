@@ -14,3 +14,7 @@ This repo contains a scaffold that is ready to be deployed to Heroku for a simpl
 1. Add a boolean `published` column (default value should be false), that allows you to toggle whether or
    not a blog post should be shown on the front page of the blog
 1. Deploy to Heroku
+
+Notice: once you have added a model, or a migration to your app, you need to migrate the database on
+heroku as well! Locally you do it with `bundle exec rake db:migrate`. On heroku you will need to do it
+with `heroku run db:migrate`
